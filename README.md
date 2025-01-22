@@ -4,7 +4,8 @@ Breadth-first search
 # Notes
 [![HW2-BFS](https://github.com/abearab/HW2-BFS/actions/workflows/test.yml/badge.svg?event=push)](https://github.com/abearab/HW2-BFS/actions/workflows/test.yml)
 
-Student: @abearab
+Student: ([@abearab](https://github.com/abearab
+
 
 
 # Assignment Overview
