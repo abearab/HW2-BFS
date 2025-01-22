@@ -57,6 +57,5 @@ def test_bfs():
             continue
         elif not nx.has_path(g.graph, start_node, node):
             break
-    # FYI – 'Reza Abbasi-Asl' is not connected to 'Tony Capra' :)
     
     assert g.bfs(start=start_node, end=node) == None
