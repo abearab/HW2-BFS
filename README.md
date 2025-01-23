@@ -3,8 +3,6 @@ Breadth-first search
 
 [![HW2-BFS](https://github.com/abearab/HW2-BFS/actions/workflows/test.yml/badge.svg?event=push)](https://github.com/abearab/HW2-BFS/actions/workflows/test.yml)
 
-Student: [@abearab](https://github.com/abearab)
-
 **Description**
 
 > **Breadth First Search (BFS)** is a fundamental graph traversal algorithm. It begins with a node, then first traverses all its adjacent. Once all adjacent are visited, then their adjacent are traversed.
