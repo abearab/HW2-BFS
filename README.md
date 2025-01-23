@@ -8,6 +8,9 @@ Student: [@abearab](https://github.com/abearab)
 **Description**
 
 > **Breadth First Search (BFS)** is a fundamental graph traversal algorithm. It begins with a node, then first traverses all its adjacent. Once all adjacent are visited, then their adjacent are traversed.
+> 
+> ![image](https://github.com/user-attachments/assets/b758bd49-0da6-40ab-8ed8-c03820901483)
+
 
 
 Reference: https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/
