@@ -1,15 +1,22 @@
 # Assignment 2
 Breadth-first search
 
-# Notes
 [![HW2-BFS](https://github.com/abearab/HW2-BFS/actions/workflows/test.yml/badge.svg?event=push)](https://github.com/abearab/HW2-BFS/actions/workflows/test.yml)
 
 Student: [@abearab](https://github.com/abearab)
 
+**Description**
+
+> **Breadth First Search (BFS)** is a fundamental graph traversal algorithm. It begins with a node, then first traverses all its adjacent. Once all adjacent are visited, then their adjacent are traversed.
+
+
+Reference: https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/
 
 
 # Assignment Overview
 The purpose of this assignment is to get you comfortable working with graph structures and to implement a breadth-first search function to traverse the graph and find the shortest path between nodes.
+
+<details>
 
 # Assignment Tasks
 
@@ -82,3 +89,4 @@ Make sure to push all your code to github, ensure that your unit tests are corre
 * Readable code with clear comments and method descriptions
 * Updated README with description of your methods
 
+</details>

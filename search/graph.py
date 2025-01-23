@@ -57,7 +57,7 @@ class Graph:
             # Iterate over the queue
             while q:
             
-                # Dequeue a vertex from queue and print it
+                # Dequeue a vertex from queue and record it
                 curr = q.popleft()
                 result.append(curr)
 
