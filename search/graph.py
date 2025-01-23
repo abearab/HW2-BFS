@@ -1,6 +1,8 @@
 import igraph as ig
 import networkx as nx
 
+from collections import deque
+
 class Graph:
     """
     Class to contain a graph and your bfs function
@@ -32,8 +34,49 @@ class Graph:
 
         """
         if end is None:
-            return list(nx.bfs_tree(self.graph, start))
+            ## use networkx BFS
+            # return list(nx.bfs_tree(self.graph, start))
+
+            ## reimplement BFS
+            # Source: https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/
+            # Create a queue for BFS
+
+            adj = self.graph.adj
+            result = []
+
+            q = deque()
+            
+            # Initially mark all the vertices as not visited
+            # When we push a vertex into the q, we mark it as visited
+            visited = {node: False for node in adj}
+
+            # Mark the source node as visited and enqueue it
+            visited[start] = True
+            q.append(start)
+
+            # Iterate over the queue
+            while q:
+            
+                # Dequeue a vertex from queue and print it
+                curr = q.popleft()
+                result.append(curr)
+
+                # Get all adjacent vertices of the dequeued 
+                # vertex. If an adjacent has not been visited, 
+                # mark it visited and enqueue it
+                for x in adj[curr]:
+                    if not visited[x]:
+                        visited[x] = True
+                        q.append(x)
+
+            return result
+
         elif nx.has_path(self.graph, start, end):
+            ## use networkx shortest path
             return nx.shortest_path(self.graph, start, end)
+
+            ## reimplement BFS with pathfinding
+            #TODO: write this part from scratch
+        
         elif not nx.has_path(self.graph, start, end):
             return None
